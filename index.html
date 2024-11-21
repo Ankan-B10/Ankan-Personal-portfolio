@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio | Ankan Bera</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<script
+			src="https://kit.fontawesome.com/b24556d287.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<img src="images/logo.png" alt="logo" class="logo" />
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<i
+							class="menu fa-regular fa-circle-xmark"
+							onclick="closeMenu()"></i>
+					</ul>
+					<i class="menu fa-solid fa-bars" onclick="openMenu()"></i>
+				</nav>
+				<div class="header-text">
+					<p>Web Developer</p>
+					<h1>
+						Hi, I'm
+						<span style="color: #3999e8"
+							>Ankan <i class="fa-solid fa-glasses"></i
+						></span>
+						<br />From Kolkata, INDIA
+					</h1>
+				</div>
+			</div>
+		</div>
+		<!-- About section -->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="images/HeroImage.jpeg" alt="" />
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p>
+							Hi, I'm Ankan Bera, a passionate web developer. Aspiring Software
+							Engineering Student | Passion for Innovation and Problem-Solving |
+							Excited to Learn and Implement New Technologies
+						</p>
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">
+								Skills
+							</p>
+							<p class="tab-links" onclick="opentab('experience')">
+								Experience
+							</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<!-- ------Skills------ -->
+						<div class="tab-contents active-tab" id="skills">
+							<!-- active-tab helps for disply only that tab -->
+							<ul>
+								<li>
+									<span>Web Design</span><br />Designing Web Interface using
+									MERN
+								</li>
+								<li>
+									<span>Graphic Design</span><br />Designing Graphics, Logos
+								</li>
+								<li><span>Teaching</span><br />Teaching DSA in C++</li>
+							</ul>
+						</div>
+						<!-- --------Experience------ -->
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li>
+									<span>Hackaton 2024</span><br />Finalist in Hack-Synthesis
+									(IEM)
+								</li>
+								<!-- <li><span>Leetcode</span><br />Solving 300+ Questions</li> -->
+							</ul>
+						</div>
+						<!-- --------Education------ -->
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>2026 (Expected)</span><br />B.Tech in Computer Science
+									from Haldia Institute of Technology <br />CGPA: 8.0
+								</li>
+								<li>
+									<span>2021</span><br />Higher Secondary from WBCHSE
+									<br />Percentage: 88%
+								</li>
+								<li>
+									<span>2019</span><br />Intermediate from WBBSE
+									<br />Percentage: 84%
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="logos container">
+			<div class="marquee">
+				<div class="track">
+					<img src="./images/html.png" alt="HTML" width="128" />
+					<img src="./images/css.png" alt="CSS" width="128" />
+					<img src="./images/javascript.png" alt="JS" width="128" />
+					<img src="./images/sass.png" width="128" alt="Sass" />
+					<img src="./images/react.png" width="128" alt="React" />
+					<img src="./images/nextjs.png" width="128" alt="Next JS" />
+					<img src="./images/C++_logo.png" alt="C++" width="110" />
+					<img src="./images/vscode.png" width="128" alt="VS Code" />
+					<img src="./images/python.png" width="128" alt="Python" />
+					<img src="./images/html.png" alt="HTML" width="128" />
+					<img src="./images/css.png" alt="CSS" width="128" />
+					<img src="./images/javascript.png" alt="JS" width="128" />
+					<img src="./images/sass.png" width="128" alt="Sass" />
+					<img src="./images/react.png" width="128" alt="React" />
+					<img src="./images/nextjs.png" width="128" alt="Next JS" />
+					<img src="./images/C++_logo.png" alt="C++" width="110" />
+					<img src="./images/vscode.png" width="128" alt="VS Code" />
+					<img src="./images/python.png" width="128" alt="Python" />
+				</div>
+			</div>
+		</section>
+
+		<!-- ----- Services ---------- -->
+		<div id="services">
+			<div class="container">
+				<h1 class="sub-title">My Services</h1>
+				<div class="services-list">
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Design</h2>
+						<p>
+							I deliver stunning, user-friendly websites to establish your
+							online presence. From simple sites to complex e-commerce
+							platforms, I provide tailored solutions using the latest
+							frameworks and technologies for a seamless, responsive, and
+							SEO-friendly browsing experience. Enhance your online identity
+							with quality.
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-book"></i>
+						<h2>Teaching Service</h2>
+						<p>
+							Teaching is like my Passion. I love to share my knowledge with
+							others. So I teach DSA in C++ to my jouniors.
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-crop-simple"></i>
+						<h2>Graphic Design</h2>
+						<p>
+							I bring ideas to life through captivating and meaningful designs.
+							With a focus on creativity, strategy, and attention to detail, I
+							create visuals that not only look great but also tell compelling
+							stories and resonate with the audience
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ------------ Portofolio ------------ -->
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="sub-title">My Work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="images/work-1.jpeg" alt="" />
+						<div class="layer">
+							<h3>PaySync - npm package</h3>
+							<p>
+								PaySync is a TypeScript library that provides a unified
+								interface for integrating multiple payment providers, such as
+								Stripe, LemonSqueezy, and RozerPay. It allows developers to
+								easily switch between different payment gateways without
+								changing existing payment logic, simplifying the management of
+								various payment systems.
+							</p>
+							<a href="https://github.com/Ankan-B10/Paysync_Fronend"
+								><i class="fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/work-2.jpg" alt="" />
+						<div class="layer">
+							<h3>Fun Games</h3>
+							<p>
+								Integrating very fun games to play, Which help to users to
+								increse their productivity and memory powers
+							</p>
+							<a href="https://github.com/Ankan-B10/Simon-Game"
+								><i class="fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/work-3.jpg" alt="" />
+						<div class="layer">
+							<h3>Apple Vision Pro</h3>
+							<p>
+								The Apple Vision Pro redefines mixed reality with unmatched
+								precision. It delivers lifelike visuals and seamless real-time
+								performance. VisionOS enables intuitive interaction through eye
+								tracking, hand gestures, and voice, making it a game-changer in
+								spatial computing.
+							</p>
+							<a href="https://github.com/Ankan-B10/Apple-Vision"
+								><i class="fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn">See More</a>
+			</div>
+		</div>
+
+		<!-- ------------ Contact ------------ -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fa-solid fa-paper-plane"></i>Ankan@gmail.com</p>
+						<p><i class="fa-solid fa-phone"></i>+91 123456789</p>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/ankan.bera.1276"
+								><i class="fa-brands fa-facebook"></i
+							></a>
+							<a href="https://www.instagram.com/ankanbera10/"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+							<a href="https://twitter.com/"
+								><i class="fa-brands fa-twitter"></i
+							></a>
+							<a href="https://www.linkedin.com/"
+								><i class="fa-brands fa-linkedin"></i
+							></a>
+						</div>
+						<a href="images/Ankan Bera Resume.pdf" download class="btn btn2"
+							>Download CV</a
+						>
+					</div>
+					<div class="contact-right">
+						<form action="" name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Your Name" required />
+							<input
+								type="email"
+								name="Email"
+								placeholder="Your Email"
+								required />
+							<textarea
+								name="Message"
+								rows="6"
+								placeholder="Your Message"></textarea>
+							<button type="submit" class="btn btn2 submit">Submit</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- scrollToTop button -->
+			<i class="fa-solid fa-arrow-up scroll-up" onclick="topFunction()"></i>
+
+			<!-- ------------ copyright ------------ -->
+			<div class="copyright">
+				<p>
+					Copyright &copy; Ankan Bera | All Rights Reserved 2023
+					<i class="fa-solid fa-heart"></i>
+				</p>
+			</div>
+		</div>
+
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove("active-link");
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+
+		<!-- JS for menubar -->
+		<script>
+			var sidemenu = document.getElementById("sidemenu");
+			function openMenu() {
+				sidemenu.style.right = "0";
+			}
+			function closeMenu() {
+				sidemenu.style.right = "-200px";
+			}
+		</script>
+
+		<!-- Js for submit button gmail inputs -->
+		<script>
+			const scriptURL =
+				"https://script.google.com/macros/s/AKfycbxkpI9zW7jkuipxuy81cFIQpV_Bm8H6iuHlwfzIrDFDgpXlNIigEH0fHx8OD-Zx3vUTgA/exec";
+			const form = document.forms["submit-to-google-sheet"];
+			const msg = document.getElementById("msg");
+
+			form.addEventListener("submit", (e) => {
+				e.preventDefault();
+				fetch(scriptURL, { method: "POST", body: new FormData(form) })
+					.then((response) => {
+						msg.innerHTML = "Message sent successfully!";
+						setTimeout(function () {
+							msg.innerHTML = "";
+						}, 5000);
+						form.reset();
+					})
+					.catch((error) => console.error("Error!", error.message));
+			});
+		</script>
+
+		<!-- Js for scrollToTop button -->
+		<script>
+			var scroll = document.querySelector(".scroll-up");
+			scroll.addEventListener("click", function () {
+				window.scrollTo(0, 0);
+			});
+		</script>
+        <script src="app.js"></script>
+	</body>
+</html>
